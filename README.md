@@ -49,3 +49,21 @@ reboot
 ```
 kubeadm join <ip>:6443 --token <token> --discovery-token-ca-cert-hash <ca-hash>
 ```
+
+## Install Flannel network
+
+```
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/bc79dd1505b0c8681ece4de4c0d86c5cd2643275/Documentation/kube-flannel.yml
+```
+
+or
+
+```
+kubectl apply -f kube-flannel.yml
+```
+
+## Check Nodes
+
+```
+kubectl get nodes
+```
