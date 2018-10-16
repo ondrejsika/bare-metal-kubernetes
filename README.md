@@ -15,6 +15,12 @@ curl -fsSL https://ins.oxs.cz/docker.sh | sudo sh
 curl -fsSL https://ins.oxs.cz/kubernetes.sh | sudo sh
 ```
 
+## Install NFS client (for NFS Persistant Volume Claims)
+
+```
+sudo apt install nfs-common
+```
+
 ## Create a Master
 
 ```
@@ -114,4 +120,28 @@ or
 kubectl apply -f traefik-rbac.yaml
 kubectl apply -f traefik-deployment.yaml
 kubectl apply -f traefik-ds.yaml
+```
+
+## Install Helm Client
+
+Docs <https://github.com/helm/helm/blob/master/docs/install.md>
+
+Or oneliner for Linux:
+
+```
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get | bash
+```
+
+## Create Service Account for Tiller
+
+```
+kubectl create serviceaccount --namespace kube-system tiller
+kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
+kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+```
+
+## Install NFS Client Provisioner (using Helm)
+
+```
+helm install stable/nfs-client-provisioner --set nfs.server=<nfs-server> --set nfs.path=<exported-path>
 ```
