@@ -67,3 +67,51 @@ kubectl apply -f kube-flannel.yml
 ```
 kubectl get nodes
 ```
+
+## Install Dashboard
+
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+```
+
+or
+
+```
+kubectl apply -f kubernetes-dashboard.yaml
+```
+
+## Add Dashboard User
+
+```
+kubectl apply -f dashboard-user.yml
+```
+
+## Get Dashboard Token
+
+```
+kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | cut -f1 -d ' ') | grep -E '^token' | cut -f2 -d':' | tr -d '\t'
+```
+
+## Run kubectl proxy
+
+```
+kubectl proxy
+```
+
+Open <http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login>
+
+## Create Traefik LoadBalancer (for Ingress)
+
+```
+kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-rbac.yaml
+kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-deployment.yaml
+kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-ds.yaml
+```
+
+or
+
+```
+kubectl apply -f traefik-rbac.yaml
+kubectl apply -f traefik-deployment.yaml
+kubectl apply -f traefik-ds.yaml
+```
