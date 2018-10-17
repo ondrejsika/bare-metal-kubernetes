@@ -139,6 +139,12 @@ Or oneliner for Linux:
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get | bash
 ```
 
+Or on Windows:
+
+```
+choco install kubernetes-helm
+```
+
 ## Create Service Account for Tiller
 
 ```
