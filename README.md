@@ -95,6 +95,13 @@ kubectl apply -f dashboard-user.yml
 ## Get Dashboard Token
 
 ```
+kubectl -n kube-system describe serviceaccounts admin-user
+kubectl -n kube-system describe secret <admin-user-token>
+```
+
+Or in one line
+
+```
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | cut -f1 -d ' ') | grep -E '^token' | cut -f2 -d':' | tr -d '\t'
 ```
 
