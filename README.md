@@ -27,7 +27,7 @@ sudo apt install nfs-common
 kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
 
-## Konfigure kubect
+## Configure kubect
 
 ```
 mkdir -p $HOME/.kube
