@@ -35,21 +35,6 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
-## Fix `/etc/kubernetes/manifests/kube-controller-manager.yaml`
-
-Add to end of `spec.controller.command`
-
-```
-    - --allocate-node-cidrs=true
-    - --cluster-cidr=10.244.0.0/16
-```
-
-and reboot
-
-```
-reboot
-```
-
 ## Join nodes
 
 ```
