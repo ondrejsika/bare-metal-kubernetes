@@ -74,6 +74,10 @@ kubectl apply -f kubernetes-dashboard.yaml
 ## Add Dashboard User
 
 ```
+kubectl apply -f https://raw.githubusercontent.com/ondrejsika/kubernetes-install-bare-metal/master/kubernetes-dashboard.yaml
+```
+
+```
 kubectl apply -f dashboard-user.yml
 ```
 
