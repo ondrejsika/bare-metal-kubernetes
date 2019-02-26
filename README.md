@@ -106,7 +106,6 @@ Open <http://localhost:8001/api/v1/namespaces/kube-system/services/https:kuberne
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-rbac.yaml
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-deployment.yaml
 kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-ds.yaml
 ```
 
@@ -114,7 +113,6 @@ or
 
 ```
 kubectl apply -f traefik-rbac.yaml
-kubectl apply -f traefik-deployment.yaml
 kubectl apply -f traefik-ds.yaml
 ```
 
