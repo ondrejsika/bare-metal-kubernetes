@@ -1,7 +1,32 @@
+[Ondrej Sika](https://ondrejsika.com)
+
 # Kubernetes Install on Bare Metal
 
     Ondrej Sika <ondrej@ondrejsika.com>
     https://github.com/ondrejsika/kubernetes-install-bare-metal
+
+---
+
+## About Course
+
+### Kubernetes training in Czech Republic
+
+- [ondrej-sika.cz/skoleni/kubernetes](https://ondrej-sika.cz/skoleni/kubernetes?_s=gh-dte)
+- [skoleni-kubernetes.cz](https://skoleni-docker.cz/?_s=gh-kibm)
+
+### Docker training in Europe
+
+- [ondrej-sika.com/training/kubernetes](https://ondrej-sika.com/training/kubernetes?_s=gh-kibm)
+
+### Related courses
+
+- Introduction to Kubernetes - [ondrejsika/kubernetes-training-examples](https://github.com/ondrejsika/kubernetes-training-examples) (on Github)
+
+### Any Questions?
+
+Write me mail to <ondrej@ondrejsika.com>
+
+---
 
 ## Install Docker
 
