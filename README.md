@@ -130,8 +130,8 @@ Open <http://localhost:8001/api/v1/namespaces/kube-system/services/https:kuberne
 ## Create Traefik LoadBalancer (for Ingress)
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-rbac.yaml
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-ds.yaml
+kubectl apply -f https://raw.githubusercontent.com/containous/traefik/v1.7/examples/k8s/traefik-rbac.yaml
+kubectl apply -f https://raw.githubusercontent.com/containous/traefik/v1.7/examples/k8s/traefik-ds.yaml
 ```
 
 or
