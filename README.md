@@ -80,6 +80,15 @@ swapoff -a
 kubeadm join <ip>:6443 --token <token> --discovery-token-ca-cert-hash <ca-hash>
 ```
 
+## Master only
+
+If you want run cluster with just one server (master only), you have to allow to run containers on master, which is not recommended.
+
+```
+kubectl taint nodes --all node-role.kubernetes.io/master-
+```
+
+
 ## Install Flannel network
 
 ```
