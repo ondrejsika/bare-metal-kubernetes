@@ -48,6 +48,14 @@ sudo apt install nfs-common
 
 ## Create a Master
 
+Kubernetes doesn't run if you have swap on. You can disable it using:
+
+```
+swapoff -a
+```
+
+Now you can setup master
+
 ```
 kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
@@ -61,6 +69,12 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
 ## Join nodes
+
+You can also disable swap, if it's on:
+
+```
+swapoff -a
+```
 
 ```
 kubeadm join <ip>:6443 --token <token> --discovery-token-ca-cert-hash <ca-hash>
