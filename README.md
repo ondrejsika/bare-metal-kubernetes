@@ -1,9 +1,9 @@
 [Ondrej Sika](https://ondrejsika.com)
 
-# Kubernetes Install on Bare Metal
+# Bare Metal Kubernetes
 
     Ondrej Sika <ondrej@ondrejsika.com>
-    https://github.com/ondrejsika/kubernetes-install-bare-metal
+    https://github.com/ondrejsika/bare-metal-kubernetes
 
 ---
 
