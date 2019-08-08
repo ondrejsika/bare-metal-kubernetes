@@ -18,9 +18,9 @@
 
 - [ondrej-sika.com/training/kubernetes](https://ondrej-sika.com/training/kubernetes?_s=gh-kibm)
 
-### Related courses
+### Related Courses
 
-- Introduction to Kubernetes - [ondrejsika/kubernetes-training-examples](https://github.com/ondrejsika/kubernetes-training-examples) (on Github)
+- Introduction to Kubernetes - [ondrejsika/kubernetes-training](https://github.com/ondrejsika/kubernetes-training) (on Github)
 
 ### Any Questions?
 
