@@ -188,5 +188,11 @@ kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"templat
 ## Install NFS Client Provisioner (using Helm)
 
 ```
-helm install stable/nfs-client-provisioner --set nfs.server=<nfs-server> --set nfs.path=<exported-path>
+helm install stable/nfs-client-provisioner --name nfs-client-provisioner --set nfs.server=<nfs-server> --set nfs.path=<exported-path>
+```
+
+For example:
+
+```
+helm install stable/nfs-client-provisioner --name nfs-client-provisioner --set nfs.server=nfs.sikademo.com --set nfs.path=/nfs
 ```
