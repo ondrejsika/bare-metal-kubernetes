@@ -9,18 +9,14 @@
 
 ## About Course
 
-### Kubernetes training in Czech Republic
+### Kubernetes Training
 
-- [ondrej-sika.cz/skoleni/kubernetes](https://ondrej-sika.cz/skoleni/kubernetes?_s=gh-dte)
-- [skoleni-kubernetes.cz](https://skoleni-docker.cz/?_s=gh-kibm)
+- Czech Republic - [ondrej-sika.cz/skoleni/kubernetes](https://ondrej-sika.cz/skoleni/kubernetes?_s=gh-bmk)
+- Europe - [ondrej-sika.com/training/kubernetes](https://ondrej-sika.com/training/kubernetes?_s=gh-bmk)
 
-### Docker training in Europe
+### Related Repository
 
-- [ondrej-sika.com/training/kubernetes](https://ondrej-sika.com/training/kubernetes?_s=gh-kibm)
-
-### Related Courses
-
-- Introduction to Kubernetes - [ondrejsika/kubernetes-training](https://github.com/ondrejsika/kubernetes-training) (on Github)
+- Kubernetes Training - [ondrejsika/kubernetes-training](https://github.com/ondrejsika/kubernetes-training) (on Github)
 
 ### Any Questions?
 
