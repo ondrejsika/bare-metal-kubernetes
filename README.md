@@ -1,4 +1,4 @@
-[Ondrej Sika](https://ondrejsika.com)
+[Ondrej Sika (sika.io)](https://sika.io) | <ondrej@sika.io>
 
 # Bare Metal Kubernetes
 
@@ -24,7 +24,7 @@
 
 ### Any Questions?
 
-Write me mail to <ondrej@ondrejsika.com>
+Write me mail to <ondrej@sika.io>
 
 ---
 
