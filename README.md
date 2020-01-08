@@ -173,22 +173,14 @@ Or on Windows:
 choco install kubernetes-helm
 ```
 
-## Create Service Account for Tiller
-
-```
-kubectl create serviceaccount --namespace kube-system tiller
-kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
-kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
-```
-
 ## Install NFS Client Provisioner (using Helm)
 
 ```
-helm install stable/nfs-client-provisioner --name nfs-client-provisioner --set nfs.server=<nfs-server> --set nfs.path=<exported-path>
+helm install nfs-client-provisioner nfs-client-provisioner --set nfs.server=<nfs-server> --set nfs.path=<exported-path>
 ```
 
 For example:
 
 ```
-helm install stable/nfs-client-provisioner --name nfs-client-provisioner --set nfs.server=nfs.sikademo.com --set nfs.path=/nfs
+helm install nfs-client-provisioner nfs-client-provisioner --set nfs.server=nfs.sikademo.com --set nfs.path=/nfs
 ```
