@@ -184,3 +184,9 @@ For example:
 ```
 helm install nfs-client-provisioner nfs-client-provisioner --set nfs.server=nfs.sikademo.com --set nfs.path=/nfs
 ```
+
+## Set nfs-client as Default Storage Class
+
+```
+kubectl patch storageclass nfs-client -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+```
