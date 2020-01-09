@@ -176,13 +176,13 @@ choco install kubernetes-helm
 ## Install NFS Client Provisioner (using Helm)
 
 ```
-helm install nfs-client-provisioner nfs-client-provisioner --set nfs.server=<nfs-server> --set nfs.path=<exported-path>
+helm install nfs-client-provisioner stable/nfs-client-provisioner --set nfs.server=<nfs-server> --set nfs.path=<exported-path>
 ```
 
 For example:
 
 ```
-helm install nfs-client-provisioner nfs-client-provisioner --set nfs.server=nfs.sikademo.com --set nfs.path=/nfs
+helm install nfs-client-provisioner stable/nfs-client-provisioner --set nfs.server=nfs.sikademo.com --set nfs.path=/nfs
 ```
 
 ## Set nfs-client as Default Storage Class
